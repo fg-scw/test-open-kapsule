@@ -2,12 +2,12 @@ terraform {
   required_providers {
     scaleway = {
       source = "scaleway/scaleway"
+      version = "2.41.1"
     }
   }
-  required_version = ">= 0.13"
 }
 
 provider "scaleway" {
-  zone   = "fr-par-1"
+  zone   = "fr-par-2"
   region = "fr-par"
 }
