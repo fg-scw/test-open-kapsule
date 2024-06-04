@@ -27,7 +27,8 @@ resource "scaleway_instance_security_group" "kapsule" {
 resource "scaleway_k8s_pool" "default" {
   cluster_id          = scaleway_k8s_cluster.kapsule.id
   name                = "default"
-  node_type           = "PLAY2-PICO"
+  node_type           = "PLAY2-NANO"
+  size                = 2
   min_size            = 1
   max_size            = 3
   autohealing         = true
